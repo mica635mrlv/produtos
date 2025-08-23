@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+:root {
+    --principal-color: #0033c6;
+}
+
 body {
-    display: flex;
-    background-color: rgb(135, 247, 255);
-    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    background-color: #fcfcfc;
 }
 
 header {
@@ -16,81 +30,35 @@ header {
 }
 
 main {
-    display: flex;
-    height: 1100px;
-    background-color: rgb(247, 17, 17);
-    justify-content: center;
     align-items: center;
-    gap: 15px;
+    justify-items: center;
+    padding-top: 56px;
 }
 
-.container {
-    width: 200px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    gap: 3px;;
-    background-color: aqua;
-}
-
+.container-1,
 .container-2 {
-    width: 200px;
-    height: 180px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    gap: 3px;;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 56px;
+}
+
+.card {
+    width: 208px;
+    height: 413px;
+    border-radius: 6px;
     background-color: aqua;
 }
-
-/* .container img {
-    width: 70px;
-    height: 100px;
-    border-radius: 90%;
-    max-width: 100%;
-}
-
-.container p {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-} */
 
 h1 {
-    background-color: rgb(37, 240, 189);
-    flex-direction: column;
-    justify-content: center;
+    color: var(--principal-color);
+    font-size: 26px;
+    justify-items: start;
     align-items: center;
-    gap: 15px;
+    padding-bottom: 34px;
 }
-
-/* .container {
-    width: 200px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    gap: 3px;;
-    background-color: aqua;
-}
-
-.container img {
-    width: 70px;
-    height: 100px;
-    border-radius: 90%;
-    max-width: 100%;
-}
-
-.container p {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-} */
 
 footer {
     height: 472px;
+    background-color: royalblue;
 }
