@@ -148,6 +148,23 @@ main {
     height: 413px;
     border-radius: 6px;
     border: 1px solid var(--borda-color);
+    padding: 0px 23px 0 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 9px;
+}
+
+.card p {
+    align-self: flex-start;
+    font-size: 13px;
+    line-height: 22px;
 }
 
 h1 {
