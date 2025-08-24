@@ -185,22 +185,30 @@ h1 {
     font-weight: bold;
 }
 
+.contato-container {
+    width: 1119px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    line-height: 35px;
+}
+
 .atendimento-container {
     background-color: #e7e7e7;
     height: 80px;
-    display: flex;
     padding-top: 13px;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.atendimento-secundario {
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
     color: #575757;
     line-height: 27px;
-}
-
-.contato-container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
-    line-height: 35px;
+    width: 1119px;
+    margin: 0 auto;
 }
 
 .atendimento {
