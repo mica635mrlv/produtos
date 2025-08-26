@@ -3,17 +3,19 @@
 import produtos from "./produtos_atualizados.json" with {type: "json"}
 
 function criarCard(produto) {
-  const card = document.createElement("div");
+  const card = document.createElement("button");
   card.classList.add("card");
 
   card.innerHTML = `
     <img src="./img/${produto.imagem}" alt="${produto.nome}">
-     <p><b>${produto.nome}</b></p>
-     <p>Descrição: ${produto.descricao}</p>
+    <p><b>${produto.nome}</b></p>
+    <p>Descrição: ${produto.descricao}</p>
     <p><b>R$ ${produto.preco}</b></p>
-     <p>Categoria: ${produto.categoria}</p>
-   <p>Classificação: ${produto.classificacao}</p>
+    <p>Categoria: ${produto.categoria}</p>
+    <p>Classificação: ${produto.classificacao}</p> 
   `;
+
+  // criar uma função para a classificação com estrelas
 
   return card;
 }
