@@ -20,10 +20,11 @@ li {
     --borda-color: #cccccc;
     --bahia-color: #A020F0;
     --white-color: #fcfcfc;
+    --font-body: "Nunito", sans-serif;
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: var(--font-body);
     background-color: var(--white-color);
 }
 
@@ -148,11 +149,14 @@ main {
     height: 413px;
     border-radius: 6px;
     border: 1px solid var(--borda-color);
+    background-color: var(--white-color);
     padding: 0px 23px 0 23px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-body);
+    text-align: left;
 }
 
 .card img {
@@ -164,7 +168,7 @@ main {
 .card p {
     align-self: flex-start;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 23px;
 }
 
 h1 {
