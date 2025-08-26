@@ -16,9 +16,9 @@ li {
 }
 
 :root {
-    --logo-color: #0033c6;
+    --logo-color: #1E4DD8;
     --borda-color: #cccccc;
-    --bahia-color: #e71a3b;
+    --bahia-color: #A020F0;
     --white-color: #fcfcfc;
 }
 
@@ -168,7 +168,7 @@ main {
 }
 
 h1 {
-    color: var(--logo-color);
+    color: var(--bahia-color);
     font-size: 26px;
     justify-items: start;
     align-items: center;
@@ -183,15 +183,6 @@ h1 {
 .central-container span {
     color: var(--logo-color);
     font-weight: bold;
-}
-
-.contato-container {
-    width: 1119px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    line-height: 35px;
 }
 
 .atendimento-container {
@@ -211,6 +202,19 @@ h1 {
     margin: 0 auto;
 }
 
+.atendimento-container span {
+    color: var(--bahia-color);
+}
+
 .atendimento {
     width: 185px;
+}
+
+.contato-container {
+    width: 1119px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    line-height: 35px;
 }
