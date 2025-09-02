@@ -2,6 +2,8 @@
 
 import produtos from "./produtos_atualizados.json" with {type: "json"}
 
+const buttonCard = document.querySelector("button")
+
 function criarCard(produto) {
   const card = document.createElement("button");
   card.classList.add("card");
@@ -26,6 +28,10 @@ function criarCard(produto) {
     <p><b>R$ ${produto.preco}</b></p>
     <p>Categoria: ${produto.categoria}</p>
   `;
+
+  card.addEventListener("click", () => {
+    alert("Produto foi adicionado no carrinho com sucesso!");
+  });
 
   return card;
 }
