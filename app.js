@@ -6,16 +6,26 @@ function criarCard(produto) {
   const card = document.createElement("button");
   card.classList.add("card");
 
+  function gerarEstrelas(classificacao) {
+    let estrelas = "";
+    for (let i = 0; i < 5; i++) {
+      if (i < classificacao) {
+        estrelas += "⭐";
+      } else {
+        estrelas += "☆";
+      }
+    }
+    return estrelas;
+  }
+
   card.innerHTML = `
     <img src="./img/${produto.imagem}" alt="${produto.nome}">
     <p><b>${produto.nome}</b></p>
     <p>Descrição: ${produto.descricao}</p>
+    <p>${gerarEstrelas(produto.classificacao)}</p>
     <p><b>R$ ${produto.preco}</b></p>
     <p>Categoria: ${produto.categoria}</p>
-    <p>Classificação: ${produto.classificacao}</p> 
   `;
-
-  // criar uma função para a classificação com estrelas
 
   return card;
 }
