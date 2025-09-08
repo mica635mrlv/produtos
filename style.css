@@ -22,6 +22,7 @@ li {
     --white-color: #fcfcfc;
     --font-body: "Nunito", sans-serif;
     --font-color: #575757;
+    --width-page: 1119px;
 }
 
 body {
@@ -29,16 +30,22 @@ body {
     background-color: var(--white-color);
 }
 
-.banner {
-    height: 28px;
+.container-banner {
     background-color: #f0efea;
     border-bottom: 3.4px solid var(--bahia-color);
-    display: flex;
     justify-content: center;
-    align-items: center;
+    display: flex;
+}
+
+.banner {
+    height: 28px;
+    width: var(--width-page);
     gap: 13px;
     color: var(--bahia-color);
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box-red {
@@ -65,7 +72,7 @@ body {
 
 .home {
     display: flex;
-    width: 1119px;
+    width: var(--width-page);
     height: 68px;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +114,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 12px;
-    width: 1119px;
+    width: var(--width-page);
     color: var(--logo-color);
 }
 
@@ -211,7 +218,7 @@ h1 {
     font-weight: bold;
     color: var(--font-color);
     line-height: 27px;
-    width: 1119px;
+    width: var(--width-page);
     margin: 0 auto;
 }
 
@@ -225,7 +232,7 @@ h1 {
 }
 
 .contato-container {
-    width: 1119px;
+    width: var(--width-page);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

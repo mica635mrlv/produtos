@@ -8,13 +8,16 @@ function criarCard(produto) {
 
   function gerarEstrelas(classificacao) {
     let estrelas = "";
+
     for (let i = 0; i < 5; i++) {
+
       if (i < classificacao) {
         estrelas += "⭐";
       } else {
         estrelas += "☆";
       }
     }
+
     return estrelas;
   }
 
@@ -57,11 +60,13 @@ function criarMain() {
 
   produtos.forEach((produto, index) => {
     const card = criarCard(produto);
+
     if (index < 5) {
       container1.appendChild(card);
     } else {
       container2.appendChild(card);
     }
+    
   });
 
   containerProdutos.appendChild(titulo1);
